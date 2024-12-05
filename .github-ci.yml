@@ -1,0 +1,9 @@
+stages:
+- lint
+- deploy
+
+lint:
+  script: npm run lint
+
+deploy:
+  script: cp -r * public/
